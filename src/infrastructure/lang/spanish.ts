@@ -1,5 +1,5 @@
 ﻿/* eslint-disable vue/max-len */
-export const appTexts = {
+export const appTexts: any = {
   navbar: {
     brand1: 'Clip & Clic',
     brand2: '',
@@ -64,5 +64,10 @@ export const appTexts = {
     },
     copyright: 'Hecho por',
     copyrightLinkText: 'FennecSoft',
+  },
+  products: {
+    searchPlaceholder: 'Buscar productos...',
+    noResults: 'No hay productos disponibles en esta categoría.',
+    outOfStock: 'Sin Stock',
   },
 };

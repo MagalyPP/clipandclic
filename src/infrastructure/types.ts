@@ -23,4 +23,5 @@ export type Product = {
   category: 'utiles' | 'navidad' | 'mouses-teclados' | 'audio' | 'cables' | 'almacenamiento';
   images: string[];
   inBanner?: boolean;
+  inStock?: boolean;
 }

@@ -1,3 +1,4 @@
+/* eslint-disable vue/max-len */
 import type { Product } from '@/infrastructure/types';
 
 const getImagePath = (filename: string): string => {
@@ -12,6 +13,8 @@ export const products: Product[] = [
     description: 'Set acuarela mini 15 mm con pincel incluido, ideal para proyectos escolares y manualidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('ACUARELA MINI 15MM 15 COLORES + PINCEL DOMS.jpg')],
   },
   {
@@ -20,6 +23,8 @@ export const products: Product[] = [
     description: 'Adhesivo multiuso en presentación de 30cc, pack de 24 unidades para uso escolar y manualidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('ADHESIVO MULTIUSO 30CC 24 UNIDADES FULTONS.jpg')],
   },
   {
@@ -28,6 +33,8 @@ export const products: Product[] = [
     description: 'Block de dibujo Liceo con 60 hojas, papel de buena calidad para lápiz y técnicas secas.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('BLOCK DE DIBUJO LICEO 60 ARTE TOP.png')],
   },
   {
@@ -36,6 +43,8 @@ export const products: Product[] = [
     description: 'Block doble faz N°99 con 18 hojas, ideal para trabajos escolares y proyectos artísticos.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('BLOCK DIBUJO DOBLE FAZ N°99 18 PROARTE.jpg')],
   },
   {
@@ -44,6 +53,8 @@ export const products: Product[] = [
     description: 'Set de papel lustre 16x16cm, 24 hojas de colores surtidos para manualidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('BLOCK PAPEL LUSTRE 16X16 24 HJS PROARTE.jpg')],
   },
   {
@@ -52,6 +63,8 @@ export const products: Product[] = [
     description: 'Bolígrafo punta fina 0.6mm, pack de 12 unidades, tinta azul para uso escolar y oficina.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('BOLIGRAFO PUNTA 0.6MM 12 UNIDADES AZUL DOMS.png')],
   },
 
@@ -63,6 +76,7 @@ export const products: Product[] = [
     price: 49990,
     category: 'navidad',
     inBanner: true,
+    inStock: false,
     images: [
       getImagePath('PAPEL DE REGALO NAVIDEÑO 70X100CM 1 PLIEGO LIBESA ADORNOS.png'),
       getImagePath('PAPEL DE REGALO NAVIDEÑO 70X100CM 1 PLIEGO LIBESA BOTAS.jpg'),
@@ -77,6 +91,7 @@ export const products: Product[] = [
     price: 9990,
     category: 'navidad',
     inBanner: true,
+    inStock: true,
     images: [
       getImagePath('ETIQUEAS NAVIDEÑAS AUTOADHESIVAS.jpg'),
     ],
@@ -89,6 +104,7 @@ export const products: Product[] = [
     price: 79990,
     category: 'navidad',
     inBanner: true,
+    inStock: false,
     images: [
       getImagePath('CINTA MAGICA LISA DORADA 2,7X48CM.png'),
       getImagePath('CINTA MAGICA LISA PLATA 2,7X48CM.png'),
@@ -103,6 +119,7 @@ export const products: Product[] = [
     price: 2990,
     category: 'navidad',
     inBanner: true,
+    inStock: true,
     images: [getImagePath('CINTA ADHESIVA ANCHA 12MMX30MTS NUOVO.png')],
   },
 
@@ -113,6 +130,8 @@ export const products: Product[] = [
     description: 'Mouse inalámbrico ergonómico con batería de larga duración.',
     price: 19990,
     category: 'mouses-teclados',
+    inBanner: false,
+    inStock: true,
     images: ['https://picsum.photos/400/300?random=11'],
   },
   {
@@ -121,6 +140,8 @@ export const products: Product[] = [
     description: 'Teclado mecánico gaming con iluminación RGB y switches de calidad.',
     price: 59990,
     category: 'mouses-teclados',
+    inBanner: false,
+    inStock: true,
     images: ['https://picsum.photos/400/300?random=12'],
   },
   {
@@ -129,6 +150,8 @@ export const products: Product[] = [
     description: 'Combo inalámbrico de mouse y teclado con receptor USB unificado.',
     price: 44990,
     category: 'mouses-teclados',
+    inBanner: false,
+    inStock: true,
     images: ['https://picsum.photos/400/300?random=13'],
   },
   {
@@ -137,6 +160,8 @@ export const products: Product[] = [
     description: 'Mouse gamer con 7 botones programables y sensor de alta precisión.',
     price: 34990,
     category: 'mouses-teclados',
+    inBanner: false,
+    inStock: true,
     images: ['https://picsum.photos/400/300?random=14'],
   },
 
@@ -147,6 +172,8 @@ export const products: Product[] = [
     description: 'Auriculares bluetooth con cancelación de ruido y 30 horas de batería.',
     price: 79990,
     category: 'audio',
+    inBanner: false,
+    inStock: true,
     images: ['https://picsum.photos/400/300?random=15'],
   },
   {
@@ -155,6 +182,8 @@ export const products: Product[] = [
     description: 'Parlante portátil resistente al agua con batería de 20 horas.',
     price: 49990,
     category: 'audio',
+    inBanner: false,
+    inStock: true,
     images: ['https://picsum.photos/400/300?random=16'],
   },
   {
@@ -163,6 +192,8 @@ export const products: Product[] = [
     description: 'Micrófono profesional para streaming y podcasts con soporte incluido.',
     price: 54990,
     category: 'audio',
+    inBanner: false,
+    inStock: true,
     images: ['https://picsum.photos/400/300?random=17'],
   },
   {
@@ -171,6 +202,8 @@ export const products: Product[] = [
     description: 'Headset gaming con micrófono integrado, 7.1 surround y confort duradero.',
     price: 69990,
     category: 'audio',
+    inBanner: false,
+    inStock: true,
     images: ['https://picsum.photos/400/300?random=18'],
   },
 
@@ -181,6 +214,8 @@ export const products: Product[] = [
     description: 'Cable USB-C de carga rápida certificado, compatible con múltiples dispositivos.',
     price: 12990,
     category: 'cables',
+    inBanner: false,
+    inStock: true,
     images: ['https://picsum.photos/400/300?random=19'],
   },
   {
@@ -189,6 +224,8 @@ export const products: Product[] = [
     description: 'Cable HDMI 2.1 para transmisión 4K a 120Hz con conectores reforzados.',
     price: 9990,
     category: 'cables',
+    inBanner: false,
+    inStock: true,
     images: ['https://picsum.photos/400/300?random=20'],
   },
   {
@@ -197,6 +234,8 @@ export const products: Product[] = [
     description: 'Set de 5 cables: USB-C, Lightning, Micro USB, HDMI y adaptador.',
     price: 29990,
     category: 'cables',
+    inBanner: false,
+    inStock: true,
     images: ['https://picsum.photos/400/300?random=21'],
   },
   {
@@ -205,6 +244,8 @@ export const products: Product[] = [
     description: 'Cable de red CAT6 de 10m con velocidad gigabit y blindaje mejorado.',
     price: 14990,
     category: 'cables',
+    inBanner: false,
+    inStock: true,
     images: ['https://picsum.photos/400/300?random=22'],
   },
 
@@ -215,6 +256,8 @@ export const products: Product[] = [
     description: 'SSD externo portátil 500GB USB 3.0 con velocidades de lectura ultrarrápidas.',
     price: 49990,
     category: 'almacenamiento',
+    inBanner: false,
+    inStock: true,
     images: ['https://picsum.photos/400/300?random=23'],
   },
   {
@@ -223,6 +266,8 @@ export const products: Product[] = [
     description: 'Pendrive 128GB USB 3.1 ultrarrápido con diseño compacto y resistente.',
     price: 16990,
     category: 'almacenamiento',
+    inBanner: false,
+    inStock: true,
     images: ['https://picsum.photos/400/300?random=24'],
   },
   {
@@ -231,6 +276,8 @@ export const products: Product[] = [
     description: 'Disco duro externo 1TB con batería de backup y compatibilidad universal.',
     price: 69990,
     category: 'almacenamiento',
+    inBanner: false,
+    inStock: true,
     images: ['https://picsum.photos/400/300?random=25'],
   },
   {
@@ -239,6 +286,8 @@ export const products: Product[] = [
     description: 'SSD externo 1TB portátil con velocidades de lectura hasta 1050MB/s.',
     price: 89990,
     category: 'almacenamiento',
+    inBanner: false,
+    inStock: true,
     images: ['https://picsum.photos/400/300?random=26'],
   },
   // Agregados automáticamente desde public/images/products/
@@ -248,6 +297,8 @@ export const products: Product[] = [
     description: 'Bombitas de agua con adaptador, pack de 100 unidades para juegos y fiestas.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('BOMBITAS DE AGUA CON ADAPTADOR 100 UNIDADES BALLOONS.png')],
   },
   {
@@ -256,6 +307,8 @@ export const products: Product[] = [
     description: 'Caja con 36 gomas de borrar tipo miga, ideales para uso escolar.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('CAJA GOMA DE BORRAR MIGA 36 UNIDADES FULTONS.jpg')],
   },
   {
@@ -264,6 +317,8 @@ export const products: Product[] = [
     description: 'Caja de minas 0.5mm HB, 24 unidades para portaminas.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('CAJA MINAS 0.5MM HB 24 UNIDADES FULTONS.jpg')],
   },
   {
@@ -272,6 +327,8 @@ export const products: Product[] = [
     description: 'Cuaderno de caligrafía H con 80 hojas, ideal para practicar escritura.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('caligrafia H 80 hojas.png')],
   },
   {
@@ -280,6 +337,8 @@ export const products: Product[] = [
     description: 'Carpeta de cartón piedra con 6 hojas para trabajos escolares.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('CARPETA CARTON PIEDRA 6 HOJAS ARTE TOP.png')],
   },
   {
@@ -288,6 +347,8 @@ export const products: Product[] = [
     description: 'Carpeta de cartulina, presentación de 14 hojas para manualidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('CARPETA CARTULINA 14 HJS FULTONS.jpg')],
   },
   {
@@ -296,6 +357,8 @@ export const products: Product[] = [
     description: 'Carpeta cartulina con elástico en color rojo, resistente y práctica.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('CARPETA CARTULINA CON ELASTICO ROJA LAVORO.jpg')],
   },
   {
@@ -304,6 +367,8 @@ export const products: Product[] = [
     description: 'Carpeta cartulina con elástico en color verde claro, para organizar documentos.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('CARPETA CARTULINA CON ELASTICO VERDE CLARO LAVORO.jpg')],
   },
   {
@@ -312,6 +377,8 @@ export const products: Product[] = [
     description: 'Carpeta cartulina estilo español, 10 hojas, ideal para presentaciones.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('CARPETA CARTULINA ESPAÑOLA 10 HJS FULTONS.jpg')],
   },
   {
@@ -320,6 +387,8 @@ export const products: Product[] = [
     description: 'Carpeta de cartulina fluorescente, 6 hojas, colores vivos para proyectos.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('CARPETA CARTULINA FLUORESCENTE 6 HJS FULTONS.jpg')],
   },
   {
@@ -328,6 +397,8 @@ export const products: Product[] = [
     description: 'Carpeta cartulina metálica, 10 hojas con acabado brillante.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('CARPETA CARTULINA METALICA 10 HJS FULTONS.jpg')],
   },
   {
@@ -336,6 +407,8 @@ export const products: Product[] = [
     description: 'Carpeta con papel crepé, 6 hojas para manualidades escolares.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('CARPETA PAPEL CREPE 6 HOJAS ARTE TOP.jpg')],
   },
   {
@@ -344,6 +417,8 @@ export const products: Product[] = [
     description: 'Pack de papel entretendido 9 hojas con 18 diseños, ideal para creatividad.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('CARPETA PAPEL ENTRETENIDO 9 HJS 18 DISEÑOS FULTONS.jpg')],
   },
   {
@@ -352,6 +427,8 @@ export const products: Product[] = [
     description: 'Block de papel volantín, 10 hojas para manualidades y escuelas.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('CARPETA PAPEL VOLANTIN 10 HOJAS ARTE TOP.png')],
   },
   {
@@ -360,6 +437,8 @@ export const products: Product[] = [
     description: 'Cinta de embalaje transparente, pack de 6 unidades, ideal para embalaje y mudanzas.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('CINTA DE EMBALAJE TRANSPARENTE 48MMX30MTS 6 UNIDADES FULTONS.jpg')],
   },
   {
@@ -368,6 +447,8 @@ export const products: Product[] = [
     description: 'Cinta de enmascarar roja de 18mm x 20m para pintura y señalización.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('CINTA DE ENMASCARAR ROJA 18MMX20MTS USATAPE.jpg')],
   },
   {
@@ -376,6 +457,8 @@ export const products: Product[] = [
     description: 'Cinta doble contacto para pegado fuerte, presentación práctica.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('CINTA DOBLE CONTACTO 18MMX13.7MTS 1 UNIDAD LAVORO.png')],
   },
   {
@@ -384,6 +467,8 @@ export const products: Product[] = [
     description: 'Pegamento en tubo de 38 gramos, pack de 12 unidades para manualidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('COLA FRIA 38 GRAMOS 12 UNIDADES PROARTE.png')],
   },
   {
@@ -392,6 +477,8 @@ export const products: Product[] = [
     description: 'Cuaderno college 100 hojas con diseño Spider.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('college 100 hojas spider.png')],
   },
   {
@@ -400,6 +487,8 @@ export const products: Product[] = [
     description: 'Cuaderno college 100 hojas con diseño Hello Kitty.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('college hello kitty 100 hojas.jpg')],
   },
   {
@@ -408,6 +497,8 @@ export const products: Product[] = [
     description: 'Cuaderno college para matemáticas con 80 hojas.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('college matematicas 80 hojas.jpg')],
   },
   {
@@ -416,6 +507,8 @@ export const products: Product[] = [
     description: 'Croquera doble faz en formato oficio con espiral y 50 hojas.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('CROQUERA DOBLE FAZ ESPIRAL OFICIO 50 HOJAS ARTE TOP.png')],
   },
   {
@@ -424,6 +517,8 @@ export const products: Product[] = [
     description: 'Cuaderno para música con 12 pautas y 10 hojas.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('CUADERNO MUSICA 12 PAUTA 10HJS PROARTE.jpg')],
   },
   {
@@ -432,6 +527,8 @@ export const products: Product[] = [
     description: 'Pack de hojas con diseños variados para manualidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [
       getImagePath('universitario chillbara 100 hojas.png'),
       getImagePath('universitario capibarra 100 hojas.jpg'),
@@ -444,6 +541,8 @@ export const products: Product[] = [
     description: 'Escuadra plástica de 20cm 45°, herramienta de geometría escolar.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('ESCUADRA 20CM 45° 1 UNIDAD FULTONS.jpg')],
   },
   {
@@ -452,6 +551,8 @@ export const products: Product[] = [
     description: 'Estuche con papel diamante, 6 hojas para manualidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('ESTUCHE PAPEL DIAMANTE 6HJS PROARTE.jpg')],
   },
   {
@@ -460,6 +561,8 @@ export const products: Product[] = [
     description: 'Forro para cuadernos color amarillo, pack de 10 unidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('FORRO COLLEGE AMARILLO 10 UNIDADES ESPINOZA.jpg')],
   },
   {
@@ -468,6 +571,8 @@ export const products: Product[] = [
     description: 'Forro para cuadernos color azul, pack de 10 unidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('FORRO COLLEGE AZUL 10 UNIDADES ESPINOZA.jpg')],
   },
   {
@@ -476,6 +581,8 @@ export const products: Product[] = [
     description: 'Forro blanco para cuadernos, pack de 10 unidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('FORRO COLLEGE BLANCO 10 UNIDADES ESPINOZA.jpg')],
   },
   {
@@ -484,6 +591,8 @@ export const products: Product[] = [
     description: 'Forro color café para cuadernos, pack de 10 unidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('FORRO COLLEGE CAFE 10 UNIDADES ESPINOZA.jpg')],
   },
   {
@@ -492,6 +601,8 @@ export const products: Product[] = [
     description: 'Forro color celeste para cuadernos, pack de 10 unidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('FORRO COLLEGE CELESTE 10 UNIDADES ESPINOZA.jpg')],
   },
   {
@@ -500,6 +611,8 @@ export const products: Product[] = [
     description: 'Forro color morado para cuadernos, pack de 10 unidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('FORRO COLLEGE MORADO 10 UNIDADES ESPINOZA.jpg')],
   },
   {
@@ -508,6 +621,8 @@ export const products: Product[] = [
     description: 'Forro color naranja para cuadernos, pack de 10 unidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('FORRO COLLEGE NARANJA 10 UNIDADES ESPINOZA.jpg')],
   },
   {
@@ -516,6 +631,8 @@ export const products: Product[] = [
     description: 'Forro color rojo para cuadernos, pack de 10 unidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('FORRO COLLEGE ROJO 10 UNIDADES ESPINOZA.jpg')],
   },
   {
@@ -524,6 +641,8 @@ export const products: Product[] = [
     description: 'Forro color verde claro para cuadernos, pack de 10 unidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('FORRO COLLEGE VERDE CLARO 10 UNIDADES ESPINOZA.jpg')],
   },
   {
@@ -532,6 +651,8 @@ export const products: Product[] = [
     description: 'Planchas de goma eva 20x30cm en colores surtidos, pack de 10.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('GOMA EVA 20X30CM COLORES SURTIDOS 10 UNIDADES ART & CRAFT.jpg')],
   },
   {
@@ -540,6 +661,8 @@ export const products: Product[] = [
     description: 'Goma eva con acabado glitter, pack de 6 hojas 20x30cm.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('GOMA EVA GLITTER 20X30CM 6 HOJAS COLORES SURTIDOS ART&CRAFT.jpg')],
   },
   {
@@ -548,6 +671,8 @@ export const products: Product[] = [
     description: 'Greda en presentación de 1 kilo para trabajos artísticos y escolares.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('GREDA 1 KILO APROX.jpg')],
   },
   {
@@ -556,6 +681,8 @@ export const products: Product[] = [
     description: 'Set de 12 lápices de colores jumbo con formato hexagonal.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('LAPICES 12 COLORES JUMBO HEXAGONALES LAVORO.jpg')],
   },
   {
@@ -564,6 +691,8 @@ export const products: Product[] = [
     description: 'Set de 12 lápices de colores largos con cuerpo hexagonal.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('LAPICES 12 COLORES LARGOS HEXAGONALES FULTONS.jpg')],
   },
   {
@@ -572,6 +701,8 @@ export const products: Product[] = [
     description: 'Set de 12 lápices de cera jumbo para niños y manualidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('LAPICES DE CERA 12 COLORES JUMBO FULTONS.jpg')],
   },
   {
@@ -580,6 +711,8 @@ export const products: Product[] = [
     description: 'Set de lápices grafito jumbo con sacapuntas triangular incluido, 12 unidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('LAPICES GRAFITO JUMBO + SACAPUNTA TRIANGULAR 12 UNIDADES ARTE TOP.png')],
   },
   {
@@ -588,6 +721,8 @@ export const products: Product[] = [
     description: 'Lápiz bicolor en cuerpo hexagonal, pack de 12 unidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('LAPIZ BICOLOR HEXAGONAL DELGADO 12 UNIDADES SELLOSCHOOL.png')],
   },
   {
@@ -596,6 +731,8 @@ export const products: Product[] = [
     description: 'Lápiz corrector en presentación de 7ml, pack de 12 unidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('LAPIZ CORRECTOR 7ML 12UN FULTONS.jpg')],
   },
   {
@@ -604,6 +741,8 @@ export const products: Product[] = [
     description: 'Lápices grafito N°2 HB en pack de 12, uso escolar estándar.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('LAPIZ GRAFITO N°2 HB REDONDO 12 UNIDADES FULTONS.jpg')],
   },
   {
@@ -612,6 +751,8 @@ export const products: Product[] = [
     description: 'Pack de limpiapipas surtidos, aproximado 30 unidades para manualidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('LIMPIA PIPAS SURTIDAS 30 UNIDADES APROX ART&CRAFT.webp')],
   },
   {
@@ -620,6 +761,8 @@ export const products: Product[] = [
     description: 'Set de marcadores permanentes redondos color negro, 12 unidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('MARCADOR PERMANENTE REDONDO NEGRO 12 UNIDADES FULTONS.jpg')],
   },
   {
@@ -628,6 +771,8 @@ export const products: Product[] = [
     description: 'Set de marcadores con 6 colores para escolares.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('MARCADORES 6 COLORES ARTE TOP.png')],
   },
   {
@@ -636,6 +781,8 @@ export const products: Product[] = [
     description: 'Set de marcadores jumbo con 12 colores vibrantes.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('MARCADORES JUMBOS 12 COLORES ARTE TOP.jpg')],
   },
   {
@@ -644,6 +791,8 @@ export const products: Product[] = [
     description: 'Mezclador con 4 divisiones, útil para pintura y mezclas.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('MEZCLADOR 4 DIVISIONES 1 UNIDAD FULTON.jpg')],
   },
   {
@@ -652,6 +801,8 @@ export const products: Product[] = [
     description: 'Notas adhesivas tamaño 76x76mm en 5 colores, 100 hojas por color.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('NOTAS ADHESIVAS 76X76MM 5 COLORES 100 HOJAS NUOVO.jpg')],
   },
   {
@@ -660,6 +811,8 @@ export const products: Product[] = [
     description: 'Palos de helado jumbo en colores surtidos, 50 unidades para manualidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('PALOS DE HELADO JUMBO COLORES SURTIDOS 50 UNIDADES FULTONS.jpg')],
   },
   {
@@ -668,6 +821,8 @@ export const products: Product[] = [
     description: 'Palos de helado jumbo naturales, 50 unidades para manualidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('PALOS DE HELADO JUMBO NATURAL 50 UNIDADES APROX FULTONS.jpg')],
   },
   {
@@ -676,6 +831,8 @@ export const products: Product[] = [
     description: 'Pack de 50 palos de helado de madera para manualidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('PALOS DE HELADO MADERA 50 UNIDADES PROARTE.jpg')],
   },
   {
@@ -684,6 +841,8 @@ export const products: Product[] = [
     description: 'Palos de helado de colores para manualidades, presentación por pack.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('PALOS DE HELADOS DE COLORES ARTE TOP.png')],
   },
   {
@@ -692,6 +851,8 @@ export const products: Product[] = [
     description: 'Pasta para modelar blanca de 500 gramos, ideal para talleres y clases.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('PASTA PARA MODELAR BLANCA 500 GR ARTE TOP.jpg')],
   },
   {
@@ -700,6 +861,8 @@ export const products: Product[] = [
     description: 'Pegamento en barra de 21 gramos, pack de 12 unidades para manualidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('PEGAMENTO EN BARRA 21 GRAMOS 12 UNIDADES PROARTE.png')],
   },
   {
@@ -708,6 +871,8 @@ export const products: Product[] = [
     description: 'Pincel espatulado tamaño 12 en pack de 6 unidades para pintura.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('PINCEL N°12 ESPATULADO 6 UNIDADES ART&CRAFT.jpg')],
   },
   {
@@ -716,6 +881,8 @@ export const products: Product[] = [
     description: 'Pincel espatulado tamaño 2 en pack de 12 unidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('PINCEL N°2 ESPATULADO 12 UNIDADES ART&CRAFT.jpg')],
   },
   {
@@ -724,6 +891,8 @@ export const products: Product[] = [
     description: 'Pincel N°2 de pelo camello en pack de 12 unidades, buena calidad para pintura.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('PINCEL N°2 PELO CAMELLO 12 UNIDADES ART&CRAFT.jpg')],
   },
   {
@@ -732,6 +901,8 @@ export const products: Product[] = [
     description: 'Pincel N°4 de pelo camello en pack de 12 unidades para trabajos de pintura.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('PINCEL N°4 PELO CAMELLO 12 UNIDADES ART&CRAFT.jpg')],
   },
   {
@@ -740,6 +911,8 @@ export const products: Product[] = [
     description: 'Plasticina en presentación redonda con 12 colores surtidos.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('PLASTICINA REDONDA 12 COLORES ARTE TOP.png')],
   },
   {
@@ -748,6 +921,8 @@ export const products: Product[] = [
     description: 'Paquete de plumas blancas, 50 piezas para manualidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('PLUMAS BLANCAS 10 A 15CM 50 PIEZAS ART&CRAFT.jpg')],
   },
   {
@@ -756,6 +931,8 @@ export const products: Product[] = [
     description: 'Plumas largas de 10-15 cm, pack de 50 unidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('PLUMAS LARGAS 10-15 CMS 50 UNIDADES ART & CRAFT.jpg')],
   },
   {
@@ -764,6 +941,8 @@ export const products: Product[] = [
     description: 'Plumones para pizarra color azul, pack de 12 unidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('PLUMON PIZARRA AZUL 12 UNIDADES FULTONS.jpg')],
   },
   {
@@ -772,6 +951,8 @@ export const products: Product[] = [
     description: 'Plumones para pizarra color negro, pack de 12 unidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('PLUMON PIZARRA NEGRO 12 UNIDADES FULTONS.jpg')],
   },
   {
@@ -780,6 +961,8 @@ export const products: Product[] = [
     description: 'Set de plumones Scripto con 12 colores variados.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('PLUMON SCRIPTO 12 COLORES FULTONS.jpg')],
   },
   {
@@ -788,6 +971,8 @@ export const products: Product[] = [
     description: 'Portaminas 0.5 en colores negro y azul, pack de 12 unidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('PORTAMINAS 0.5 NEGRO-AZUL 12 UNIDADES LAVORO.jpg')],
   },
   {
@@ -796,6 +981,8 @@ export const products: Product[] = [
     description: 'Regla plástica de 20cm, herramienta escolar estándar.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('REGLA PLASTICA 20CMS FULTONS.jpg')],
   },
   {
@@ -804,6 +991,8 @@ export const products: Product[] = [
     description: 'Resma de papel tamaño carta 75 gramos para impresiones y copias.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('RESMA CARTA 75GRS PIX.jpg')],
   },
   {
@@ -812,6 +1001,8 @@ export const products: Product[] = [
     description: 'Resma formato oficio con 500 hojas, 75 gramos por m2.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('RESMA OFICIO 500 HOJAS 1 UNIDAD 75 GRAMOS PIX.jpg')],
   },
   {
@@ -820,6 +1011,8 @@ export const products: Product[] = [
     description: 'Sacapuntas plástico triangular, pack de 24 unidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('SACAPUNTA PLAST CDEP TRIANG 24 UN PROARTE.png')],
   },
   {
@@ -828,6 +1021,8 @@ export const products: Product[] = [
     description: 'Set de 12 destacadores square incluyendo tonos neon y pastel.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('SET 12 DESTACADORES SQUARE NEON+PASTEL NUOVO.jpg')],
   },
   {
@@ -836,6 +1031,8 @@ export const products: Product[] = [
     description: 'Set de 20 bolsas con escarcha para manualidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('SET 20 BOLSAS ESCARCHA ART & CRAFT.jpg')],
   },
   {
@@ -844,6 +1041,8 @@ export const products: Product[] = [
     description: 'Set de 20 bolsitas con lentejuelas de colores para manualidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('SET 20 BOLSITAS LENTEJUELAS COLORES ART & CRAFT.jpg')],
   },
   {
@@ -852,6 +1051,8 @@ export const products: Product[] = [
     description: 'Set de 20 bolsitas con ojitos locos de varios tamaños para manualidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('SET 20 BOLSITAS OJITOS LOCOS TAMAÑOS VARIOS KAMI.jpg')],
   },
   {
@@ -860,6 +1061,8 @@ export const products: Product[] = [
     description: 'Set de compases de plástico, 6 unidades para uso escolar.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('SET COMPAS PLASTICO 6 UNIDADES PROARTE.png')],
   },
   {
@@ -868,6 +1071,8 @@ export const products: Product[] = [
     description: 'Set de 10 fajos de papel lustre 10x10cm, 24 hojas para manualidades.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('SET DE 10 FAJOS DE PAPEL LUSTRE 10X10CM 24 HOJAS ARTE TOP.png')],
   },
   {
@@ -876,6 +1081,8 @@ export const products: Product[] = [
     description: 'Set de geometría de 20cm para dibujo técnico y escolar.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('SET GEOMETRÍA 20 CM PROARTE.jpg')],
   },
   {
@@ -884,6 +1091,8 @@ export const products: Product[] = [
     description: 'Set de lana en 5 colores básicos con una aguja plástica incluida.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('SET LANA 5 COLORES BASICOS 1 AGUJA PLAST ART & CRAFT.jpg')],
   },
   {
@@ -892,6 +1101,8 @@ export const products: Product[] = [
     description: 'Set didáctico del sistema solar con 10 piezas para actividades educativas.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('SET SISTEMA SOLAR 10 PIEZAS ARTE TOP.png')],
   },
   {
@@ -900,6 +1111,8 @@ export const products: Product[] = [
     description: 'Silicona en barra para pistola, uso manualidades y reparación.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('silicona en barra.jpg')],
   },
   {
@@ -908,6 +1121,8 @@ export const products: Product[] = [
     description: 'Témpera de 12 colores en envases de 20ml con pincel incluido.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('TEMPERA DE 12 COL 20ML + PINCEL ARTE TOP.jpg')],
   },
   {
@@ -916,6 +1131,8 @@ export const products: Product[] = [
     description: 'Tijera escolar de 13cm en blister, segura para niños.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('TIJERA ESCOLAR 13CMS BLISTER FULTONS.jpg')],
   },
   {
@@ -924,6 +1141,8 @@ export const products: Product[] = [
     description: 'Transportador circular 360° de 10cm biselado para dibujo técnico.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('TRANSPORTADOR 360º 10CM BISELADO FULTONS.jpg')],
   },
   {
@@ -932,6 +1151,8 @@ export const products: Product[] = [
     description: 'Cuaderno universitario Hunter con 100 hojas.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('universitario hunter 100 hojas 2.png')],
   },
   {
@@ -940,6 +1161,8 @@ export const products: Product[] = [
     description: 'Cuaderno universitario Kuromi con 100 hojas.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('universitario kuromi 100 hojas.jpg')],
   },
   {
@@ -948,6 +1171,8 @@ export const products: Product[] = [
     description: 'Cuaderno universitario Spiderman con 100 hojas.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('universitario spiderman 100 hojas.webp')],
   },
   {
@@ -956,6 +1181,8 @@ export const products: Product[] = [
     description: 'Cuaderno universitario tapa blanda con 100 hojas.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [getImagePath('universitario tapa blanda 100 hojas.jpg')],
   },
   {
@@ -965,6 +1192,8 @@ export const products: Product[] = [
       'Forros universitarios para encuadernar cuadernos y libros. Disponible en varios colores, presentación pack 10 unidades por color.',
     price: 0,
     category: 'utiles',
+    inBanner: false,
+    inStock: true,
     images: [
       getImagePath('FORRO UNIVERSITARIO AMARILLO 10 UNIDADES ESPINOZA.jpg'),
       getImagePath('FORRO UNIVERSITARIO AZUL 10 UNIDADES ESPINOZA.jpg'),

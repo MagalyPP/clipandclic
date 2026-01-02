@@ -8,6 +8,18 @@
         </div>
       </div>
 
+      <div class="row mt-3">
+        <div class="col-lg-4 ms-auto">
+          <input
+            type="search"
+            class="form-control"
+            v-model="searchTerm"
+            :placeholder="appTexts.products.searchPlaceholder"
+            aria-label="Buscar productos"
+          />
+        </div>
+      </div>
+
       <div class="row mt-md-5">
         <div class="col-lg-4 col-md-6 mb-4" v-for="product in filteredProducts" :key="product.id">
           <ProductCard :product="product" />
@@ -16,7 +28,7 @@
 
       <div v-if="filteredProducts.length === 0" class="row mt-5">
         <div class="col-lg-12 text-center">
-          <p class="text-muted">No hay productos disponibles en esta categoría.</p>
+          <p class="text-muted">{{ appTexts.products.noResults }}</p>
         </div>
       </div>
     </div>
@@ -24,10 +36,11 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, ref } from 'vue';
 import { useRoute } from 'vue-router';
 import ProductCard from '@/components/ProductCard.vue';
 import { products, getProductsByCategory } from '@/composables/data/products';
+import { appTexts } from '@/infrastructure/lang/spanish';
 
 const route = useRoute();
 
@@ -64,11 +77,17 @@ const pageDescription = computed(
   () => categoryTitles[category.value]?.description || 'Explora nuestro catálogo de productos.',
 );
 
+const searchTerm = ref('');
+
 const filteredProducts = computed(() => {
-  if (category.value === 'all') {
-    return products;
-  }
-  return getProductsByCategory(category.value);
+  const base = category.value === 'all' ? products : getProductsByCategory(category.value);
+  const term = searchTerm.value.trim().toLowerCase();
+  if (!term) return base;
+  return base.filter((p) => {
+    const title = (p.title || '').toLowerCase();
+    const desc = (p.description || '').toLowerCase();
+    return title.includes(term) || desc.includes(term);
+  });
 });
 </script>
 
