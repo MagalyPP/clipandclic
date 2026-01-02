@@ -958,6 +958,25 @@ export const products: Product[] = [
     category: 'utiles',
     images: [getImagePath('universitario tapa blanda 100 hojas.jpg')],
   },
+  {
+    id: 119,
+    title: 'Forros Universitarios (varios colores, pack 10 unidades)',
+    description:
+      'Forros universitarios para encuadernar cuadernos y libros. Disponible en varios colores, presentación pack 10 unidades por color.',
+    price: 0,
+    category: 'utiles',
+    images: [
+      getImagePath('FORRO UNIVERSITARIO AMARILLO 10 UNIDADES ESPINOZA.jpg'),
+      getImagePath('FORRO UNIVERSITARIO AZUL 10 UNIDADES ESPINOZA.jpg'),
+      getImagePath('FORRO UNIVERSITARIO BLANCO 10 UNIDADES ESPINOZA.jpg'),
+      getImagePath('FORRO UNIVERSITARIO CAFE 10 UNIDADES ESPINOZA.jpg'),
+      getImagePath('FORRO UNIVERSITARIO CELESTE 10 UNIDADES ESPINOZA.jpg'),
+      getImagePath('FORRO UNIVERSITARIO MORADO 10 UNIDADES ESPINOZA.jpg'),
+      getImagePath('FORRO UNIVERSITARIO NARANJA 10 UNIDADES ESPINOZA.jpg'),
+      getImagePath('FORRO UNIVERSITARIO ROJO 10 UNIDADES ESPINOZA.jpg'),
+      getImagePath('FORRO UNIVERSITARIO VERDE CLARO 10 UNIDADES ESPINOZA.jpg'),
+    ],
+  },
 ];
 
 export const getProductsByCategory = (category: string): Product[] => {
