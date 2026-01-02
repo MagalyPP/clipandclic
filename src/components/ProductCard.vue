@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import { type Product } from '@/composables/data/products';
+import { type Product } from '@/infrastructure/types';
 import ImageCarousel from './ImageCarousel.vue';
 
 defineProps<{
