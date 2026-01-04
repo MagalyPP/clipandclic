@@ -118,13 +118,15 @@ onBeforeUnmount(() => {
   min-width: 100%;
   position: relative;
   aspect-ratio: 16 / 9;
+  min-height: 400px;
   display: block;
+  background-color: white;
 }
 
 .banner-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 
@@ -184,7 +186,12 @@ onBeforeUnmount(() => {
   background: var(--color-dark-brown);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .banner-card {
+    aspect-ratio: 1 / 1;
+    min-height: 280px;
+  }
+
   .banner-overlay {
     padding: 1rem;
   }
