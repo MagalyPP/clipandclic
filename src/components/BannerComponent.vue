@@ -118,7 +118,7 @@ onBeforeUnmount(() => {
   min-width: 100%;
   position: relative;
   aspect-ratio: 16 / 9;
-  min-height: 400px;
+  min-height: 300px;
   display: block;
   background-color: white;
 }
