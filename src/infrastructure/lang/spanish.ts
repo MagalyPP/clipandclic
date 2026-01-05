@@ -71,5 +71,6 @@ export const appTexts: any = {
     searchAriaLabel: 'Buscar productos',
     noResults: 'No hay productos disponibles en esta categoría.',
     outOfStock: 'Sin Stock',
+    resultsCount: (count: number) => `${count} ${count === 1 ? 'producto encontrado' : 'productos encontrados'}`,
   },
 };

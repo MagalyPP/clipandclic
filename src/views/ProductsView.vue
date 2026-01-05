@@ -10,7 +10,7 @@
 
       <div class="row mt-3">
         <div class="col-lg-4 ms-auto">
-          <div class="input-group mb-3 mb-lg-0">
+          <div class="input-group mb-2">
             <span class="input-group-text bg-white">
               <FontAwesomeIcon icon="search" class="text-muted" />
             </span>
@@ -21,6 +21,9 @@
               :aria-label="appTexts.products.searchAriaLabel"
               :placeholder="appTexts.products.searchPlaceholder"
             />
+          </div>
+          <div class="text-end text-muted small mb-3 mb-lg-0">
+            {{ appTexts.products.resultsCount(filteredProducts.length) }}
           </div>
         </div>
       </div>
