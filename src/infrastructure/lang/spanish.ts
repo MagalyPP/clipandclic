@@ -61,7 +61,7 @@ export const appTexts: any = {
     },
     contact: {
       title: 'Información de Contacto',
-      email: 'contacto@fennecsoft.cl',
+      email: 'pyme.clipandclic@gmail.com',
     },
     copyright: 'Hecho por',
     copyrightLinkText: 'FennecSoft',
