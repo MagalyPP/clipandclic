@@ -117,8 +117,7 @@ onBeforeUnmount(() => {
 .banner-card {
   min-width: 100%;
   position: relative;
-  aspect-ratio: 16 / 9;
-  min-height: 300px;
+  aspect-ratio: 30 / 9;
   display: block;
   background-color: white;
 }
@@ -188,7 +187,7 @@ onBeforeUnmount(() => {
 
 @media (max-width: 768px) {
   .banner-card {
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 15 / 9;
     min-height: 280px;
   }
 
@@ -201,7 +200,7 @@ onBeforeUnmount(() => {
   }
 
   .banner-content h2 {
-    font-size: 1rem;
+    font-size: small;
   }
 
   .banner-price {

@@ -122,6 +122,18 @@ a,
   animation: fadeInUp 1s ease-out 0.3s both;
 }
 
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
