@@ -117,8 +117,7 @@ onBeforeUnmount(() => {
 .banner-card {
   min-width: 100%;
   position: relative;
-  aspect-ratio: 16 / 9;
-  min-height: 300px;
+  aspect-ratio: 30 / 9;
   display: block;
   background-color: white;
 }

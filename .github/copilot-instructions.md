@@ -82,6 +82,15 @@ npm run format     # Prettier format src/
   - See `BannerComponent.vue` for example of proper color constant usage
 - **To change colors**: Update `COLORS` constant in `constants.ts`, then all references automatically update
 
+### Banner (size/height)
+- If the user asks to change the banner size or height, this is controlled in `src/components/BannerComponent.vue` via the `.banner-card` CSS class, using the `aspect-ratio` property.
+- Key relationship: `aspect-ratio: W / H` implies the height is approximately `width * (H/W)`.
+  - Example: `aspect-ratio: 30 / 9` implies `height ≈ width * (9/30)`, which is about `0.3 * width`.
+- If the user requests a specific height in pixels, approximate it by converting pixels into an aspect ratio:
+  - Pick a reasonable target width for the breakpoint (e.g. desktop container ~1200px, mobile ~360px).
+  - Compute `W/H = targetWidthPx / desiredHeightPx`, then round to a simple fraction (e.g. 16/9, 21/9, 3/1, 4/3).
+  - Note: there is a mobile override in `@media (max-width: 768px)` for `.banner-card` (it changes `aspect-ratio` and enforces a `min-height`).
+
 ## Data & State Management
 - **Products**: Static array in `composables/data/products.ts` with type `Product[]`
 - **Categories**: `'utiles' | 'navidad' | 'mouses' | 'audio' | 'cables' | 'almacenamiento'`
