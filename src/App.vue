@@ -6,7 +6,7 @@ import WhatsAppButton from './components/WhatsAppButton.vue';
 </script>
 
 <template>
-  <div>
+  <div class="app-wrapper">
     <Navbar />
     <main class="container-lg px-0">
       <RouterView />
@@ -29,14 +29,19 @@ body {
   overflow-x: hidden;
 }
 
-#app {
+#app,
+.app-wrapper {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 main {
-  flex: 1;
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
 }
 
 /* Custom theme colors */

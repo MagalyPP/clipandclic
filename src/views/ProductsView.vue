@@ -98,7 +98,6 @@ const filteredProducts = computed(() => {
 }
 
 .products-view {
-  min-height: 100vh;
   color: #972805;
 }
 
