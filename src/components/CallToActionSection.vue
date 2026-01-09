@@ -10,7 +10,7 @@ import { appTexts } from '@/infrastructure/lang/spanish';
 </script>
 
 <template>
-  <section class="cta-section py-5">
+  <section class="cta-section py-3 py-lg-5">
     <div class="container px-lg-5">
       <div class="row align-items-center">
         <div class="col-lg-12">

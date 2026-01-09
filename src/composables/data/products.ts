@@ -339,7 +339,7 @@ export const products: Product[] = [
     images: [getImagePath('CAJA GOMA DE BORRAR MIGA 36 UNIDADES FULTONS.jpg')],
   },
   {
-    id: 30,
+    id: 115,
     title: 'Caja Minas 0.5mm HB ',
     description: 'Caja de minas 0.5mm HB.',
     price: 300,
@@ -1107,7 +1107,7 @@ export const products: Product[] = [
     images: [getImagePath('TRANSPORTADOR 360º 10CM BISELADO FULTONS.jpg')],
   },
   {
-    id: 115,
+    id: 120,
     title: 'Cuaderno Universitario Matemáticas Hunter 100 Hojas',
     description: 'Cuaderno universitario Matemáticas 7mm Hunter con 100 hojas.',
     price: 1790,

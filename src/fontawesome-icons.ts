@@ -42,6 +42,7 @@ import {
   faHandshake,
   faGraduationCap,
   faProjectDiagram,
+  faSearch,
 } from '@fortawesome/free-solid-svg-icons';
 
 // Import only the specific brand icons used in the app
@@ -107,6 +108,7 @@ library.add(
   faHandshake,
   faGraduationCap,
   faProjectDiagram,
+  faSearch,
 
   // Brand icons
   faReact,

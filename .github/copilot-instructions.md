@@ -175,6 +175,17 @@ When the user requests to update the products catalog, follow this workflow:
 - Ensure no duplicate entries exist
 - Maintain existing products that already have real images
 
+**Step 7: Check for Duplicate Product IDs (CRITICAL)**
+- After updating the catalog, **ALWAYS** verify that all product IDs are unique
+- Use grep search with regex pattern `^\s+id: \d+,` to extract all IDs from `products.ts`
+- Analyze the results to identify any duplicate IDs
+- If duplicates are found:
+  1. Keep the first occurrence with its original ID
+  2. Change subsequent duplicates to new unique IDs (continue from highest existing ID)
+  3. Update each duplicate using `replace_string_in_file` tool
+- **Why this matters**: Vue's `v-for` uses `:key="product.id"` - duplicate IDs cause rendering issues where products appear multiple times or incorrectly
+- Example fix: If two products have `id: 30`, change the second to next available ID (e.g., `id: 120`)
+
 **Post-Update Reminders**
 After updating products, remind the user to:
 1. **Manually update prices** in `composables/data/products.ts` - replace `price: 0` with actual prices

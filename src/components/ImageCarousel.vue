@@ -1,7 +1,16 @@
 <template>
   <div class="image-carousel-container">
     <div class="image-display">
-      <img :src="currentImage" :alt="imageAlt" class="carousel-image" />
+      <div v-if="isLoading" class="loading-spinner">
+        <FontAwesomeIcon icon="spinner" spin size="2x" />
+      </div>
+      <img
+        :src="currentImage"
+        :alt="imageAlt"
+        class="carousel-image"
+        :class="{ 'image-hidden': isLoading }"
+        @load="onImageLoad"
+      />
       <div v-if="images.length > 1" class="image-counter">
         {{ currentImageIndex + 1 }} / {{ images.length }}
       </div>
@@ -26,7 +35,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue';
+import { ref, computed, watch } from 'vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 interface Props {
@@ -37,16 +46,28 @@ interface Props {
 const props = defineProps<Props>();
 
 const currentImageIndex = ref(0);
+const isLoading = ref(true);
 
 const currentImage = computed(() => props.images[currentImageIndex.value]);
 
+const onImageLoad = () => {
+  isLoading.value = false;
+};
+
 const previousImage = () => {
+  isLoading.value = true;
   currentImageIndex.value = (currentImageIndex.value - 1 + props.images.length) % props.images.length;
 };
 
 const nextImage = () => {
+  isLoading.value = true;
   currentImageIndex.value = (currentImageIndex.value + 1) % props.images.length;
 };
+
+// Reset loading state when image changes
+watch(currentImage, () => {
+  isLoading.value = true;
+});
 </script>
 
 <style scoped>
@@ -56,6 +77,9 @@ const nextImage = () => {
   background-color: #f9f9f9;
   border-bottom: 1px solid #e9ecef;
   overflow: hidden;
+  height: clamp(180px, 22vw, 260px);
+  padding: 8px;
+  box-sizing: border-box;
 }
 
 .image-display {
@@ -63,14 +87,28 @@ const nextImage = () => {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 200px;
   width: 100%;
+  height: 100%;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.carousel-image.image-hidden {
+  opacity: 0;
+}
+
+.loading-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #972805;
+  z-index: 10;
 }
 
 .carousel-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
   display: block;
 }
 

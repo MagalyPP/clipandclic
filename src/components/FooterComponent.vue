@@ -28,14 +28,6 @@ const tabIconPath = `${import.meta.env.BASE_URL}tabIcon.ico`;
           </div>
         </div>
 
-        <div class="col-lg-2 col-md-6 mb-4">
-          <h6 class="text-uppercase fw-bold mb-3">{{ appTexts.footer.navigation.title }}</h6>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mb-4">
-          <h6 class="text-uppercase fw-bold mb-3">{{ appTexts.footer.services.title }}</h6>
-                  </div>
-
         <div class="col-lg-3 col-md-6 mb-4">
           <h6 class="text-uppercase fw-bold mb-3">{{ appTexts.footer.contact.title }}</h6>
           <ul class="list-unstyled">

@@ -62,11 +62,15 @@ const formatPrice = (price: number): string => {
   padding: 1.5rem;
   color: white;
   border-bottom: 3px solid var(--color-bisque);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
 .product-header h3 {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 1.4;
 }
@@ -92,7 +96,7 @@ const formatPrice = (price: number): string => {
   align-items: center;
   justify-content: center;
   border-top: 1px solid #e9ecef;
-  padding-top: 1rem;
+  padding-top: 10px;
 }
 
 .price {

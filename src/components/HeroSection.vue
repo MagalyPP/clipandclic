@@ -5,7 +5,7 @@ import { appTexts } from '@/infrastructure/lang/spanish'
 
 <template>
   <section class="hero-section position-relative overflow-hidden">
-    <div class="container position-relative mt-5">
+    <div class="container position-relative mt-3 mt-lg-5">
       <div class="row align-items-center p-lg-5">
         <div class="col-12">
           <h1 class="display-4 fw-bold mb-4 hero-title">{{ appTexts.home.heroSection.headerTitle }}</h1>
