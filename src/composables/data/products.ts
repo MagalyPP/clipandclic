@@ -286,17 +286,7 @@ export const products: Product[] = [
   },
 
   // Tecnología - Almacenamiento
-  {
-    id: 24,
-    title: 'Memoria Lexar microSDHC 32GB',
-    description: 'Tarjeta de memoria microSDHC Lexar 32GB para cámaras y dispositivos móviles.',
-    price: 5490,
-    category: 'almacenamiento',
-    inBanner: false,
-    inStock: true,
-    subCategory: null,
-    images: [getImagePath('Lexar memoria 32gb micro-sdhc.jpg')],
-  },
+
   {
     id: 25,
     title: 'Memoria Lexar microSDXC 64GB',
@@ -318,17 +308,6 @@ export const products: Product[] = [
     inStock: true,
     subCategory: null,
     images: [getImagePath('Lexar pendrive 32 GB USB 2.0.jpg')],
-  },
-  {
-    id: 27,
-    title: 'Pendrive Lexar USB 2.0 64GB',
-    description: 'Pendrive Lexar USB 2.0 64GB con gran capacidad de almacenamiento.',
-    price: 6990,
-    category: 'almacenamiento',
-    inBanner: false,
-    inStock: true,
-    subCategory: null,
-    images: [getImagePath('Lexar pendrive 64 GB USB 2.0.jpeg')],
   },
 
   // Accesorios Tech
@@ -1625,6 +1604,17 @@ export const products: Product[] = [
     inStock: true,
     subCategory: null,
     images: [getImagePath('mousepad.webp')],
+  },
+  {
+    id: 153,
+    title: 'Teclado Cableado USB Tecmaster',
+    description: 'Teclado cableado USB marca Tecmaster con conexión directa y diseño confortable.',
+    price: 5990,
+    category: 'mouses-teclados',
+    inBanner: false,
+    inStock: true,
+    subCategory: null,
+    images: [getImagePath('Teclado Cableado Usb Tecmaster.webp')],
   },
 
   // Accesorios Tech
