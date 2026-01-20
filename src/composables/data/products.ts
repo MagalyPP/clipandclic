@@ -1567,6 +1567,78 @@ export const products: Product[] = [
     subCategory: 'forros-fundas',
     images: [getImagePath('FUNDAS TRANSPARENTE OFICIO 100UN FULTONS.jpg')],
   },
+
+  // Tecnología - Cables
+  {
+    id: 147,
+    title: 'Cable Adata',
+    description: 'Cable de transferencia de datos y carga marca Adata.',
+    price: 8490,
+    category: 'cables',
+    inBanner: false,
+    inStock: true,
+    subCategory: null,
+    images: [getImagePath('cable adata.webp')],
+  },
+  {
+    id: 148,
+    title: 'Cable de Red Cat5e 1m Intellinet',
+    description: 'Cable de red Cat5e de 1 metro marca Intellinet para conexiones LAN de alta velocidad.',
+    price: 790,
+    category: 'cables',
+    inBanner: false,
+    inStock: true,
+    subCategory: null,
+    images: [getImagePath('Cable de Red Cat5e 1m Intellinet.webp')],
+  },
+  {
+    id: 149,
+    title: 'Cable USB 2.0 AM-BM 1.8m Manhattan',
+    description: 'Cable USB 2.0 tipo A-B de 1.8 metros marca Manhattan para impresoras y periféricos.',
+    price: 1990,
+    category: 'cables',
+    inBanner: false,
+    inStock: true,
+    subCategory: null,
+    images: [getImagePath('Cable Usb 2.0 AM-BM 1.8m Manhattan.webp')],
+  },
+
+  // Tecnología - Audio/Accesorios
+  {
+    id: 150,
+    title: 'Mouse Gamer Ziva Trust',
+    description: 'Mouse gamer Ziva marca Trust con precisión óptica y diseño ergonómico para gaming.',
+    price: 5990,
+    category: 'mouses-teclados',
+    inBanner: false,
+    inStock: true,
+    subCategory: null,
+    images: [getImagePath('Mouse Gamer Ziva Trust.webp')],
+  },
+  {
+    id: 151,
+    title: 'Mouse Pad',
+    description: 'Mousepad ergonómico para mayor control y comodidad en el uso del mouse.',
+    price: 5990,
+    category: 'mouses-teclados',
+    inBanner: false,
+    inStock: true,
+    subCategory: null,
+    images: [getImagePath('mousepad.webp')],
+  },
+
+  // Accesorios Tech
+  {
+    id: 152,
+    title: 'Soporte Magnético para Automóvil',
+    description: 'Soporte magnético universal para celular en automóvil, fácil instalación y ajuste.',
+    price: 2990,
+    category: 'otros',
+    inBanner: false,
+    inStock: true,
+    subCategory: null,
+    images: [getImagePath('Soporte Magnético para Automovil.webp')],
+  },
 ];
 
 export const getProductsByCategory = (category: string): Product[] => {
