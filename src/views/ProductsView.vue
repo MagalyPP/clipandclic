@@ -123,15 +123,20 @@ const normalizeText = (value: string) =>
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase();
 
-const normalizedCache = new WeakMap<Product, { title: string; desc: string }>();
+const NORMALIZED_KEY = Symbol('normalizedFields');
 const getNormalizedProduct = (product: Product) => {
-  const cached = normalizedCache.get(product);
+  const cached = (product as Record<symbol, { title: string; desc: string }>)[NORMALIZED_KEY];
   if (cached) return cached;
   const normalized = {
-    title: normalizeText(product.title || ''),
-    desc: normalizeText(product.description || ''),
+    title: normalizeText(product.title),
+    desc: normalizeText(product.description),
   };
-  normalizedCache.set(product, normalized);
+  Object.defineProperty(product, NORMALIZED_KEY, {
+    value: normalized,
+    enumerable: false,
+    configurable: false,
+    writable: false,
+  });
   return normalized;
 };
 
