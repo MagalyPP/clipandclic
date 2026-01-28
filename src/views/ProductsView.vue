@@ -116,6 +116,12 @@ const pageDescription = computed(() => {
 
 const searchTerm = ref('');
 
+const normalizeText = (value: string) =>
+  value
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase();
+
 const filteredProducts = computed(() => {
   let base = category.value === 'all' ? products : getProductsByCategory(category.value);
 
@@ -123,11 +129,11 @@ const filteredProducts = computed(() => {
     base = base.filter((p) => p.subCategory === subCategory.value);
   }
 
-  const term = searchTerm.value.trim().toLowerCase();
+  const term = normalizeText(searchTerm.value.trim());
   if (!term) return base;
   return base.filter((p) => {
-    const title = (p.title || '').toLowerCase();
-    const desc = (p.description || '').toLowerCase();
+    const title = normalizeText(p.title || '');
+    const desc = normalizeText(p.description || '');
     return title.includes(term) || desc.includes(term);
   });
 });
