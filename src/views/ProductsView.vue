@@ -50,6 +50,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import ProductCard from '@/components/ProductCard.vue';
 import { products, getProductsByCategory } from '@/composables/data/products';
 import { appTexts } from '@/infrastructure/lang/spanish';
+import type { Product } from '@/infrastructure/interfaces';
 
 const route = useRoute();
 
@@ -122,6 +123,18 @@ const normalizeText = (value: string) =>
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase();
 
+const normalizedCache = new WeakMap<Product, { title: string; desc: string }>();
+const getNormalizedProduct = (product: Product) => {
+  const cached = normalizedCache.get(product);
+  if (cached) return cached;
+  const normalized = {
+    title: normalizeText(product.title || ''),
+    desc: normalizeText(product.description || ''),
+  };
+  normalizedCache.set(product, normalized);
+  return normalized;
+};
+
 const filteredProducts = computed(() => {
   let base = category.value === 'all' ? products : getProductsByCategory(category.value);
 
@@ -132,8 +145,7 @@ const filteredProducts = computed(() => {
   const term = normalizeText(searchTerm.value.trim());
   if (!term) return base;
   return base.filter((p) => {
-    const title = normalizeText(p.title || '');
-    const desc = normalizeText(p.description || '');
+    const { title, desc } = getNormalizedProduct(p);
     return title.includes(term) || desc.includes(term);
   });
 });
