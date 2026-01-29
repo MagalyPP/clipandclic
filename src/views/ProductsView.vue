@@ -50,7 +50,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import ProductCard from '@/components/ProductCard.vue';
 import { products, getProductsByCategory } from '@/composables/data/products';
 import { appTexts } from '@/infrastructure/lang/spanish';
-import type { Product } from '@/infrastructure/interfaces';
+import type { Product } from '@/infrastructure/types';
 
 const route = useRoute();
 
