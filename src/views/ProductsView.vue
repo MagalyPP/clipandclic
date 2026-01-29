@@ -50,6 +50,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import ProductCard from '@/components/ProductCard.vue';
 import { products, getProductsByCategory } from '@/composables/data/products';
 import { appTexts } from '@/infrastructure/lang/spanish';
+import type { Product } from '@/infrastructure/types';
 
 const route = useRoute();
 
@@ -116,6 +117,29 @@ const pageDescription = computed(() => {
 
 const searchTerm = ref('');
 
+const normalizeText = (value: string) =>
+  value
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase();
+
+const NORMALIZED_KEY = Symbol('normalizedFields');
+const getNormalizedProduct = (product: Product) => {
+  const cached = (product as Record<symbol, { title: string; desc: string }>)[NORMALIZED_KEY];
+  if (cached) return cached;
+  const normalized = {
+    title: normalizeText(product.title),
+    desc: normalizeText(product.description),
+  };
+  Object.defineProperty(product, NORMALIZED_KEY, {
+    value: normalized,
+    enumerable: false,
+    configurable: false,
+    writable: false,
+  });
+  return normalized;
+};
+
 const filteredProducts = computed(() => {
   let base = category.value === 'all' ? products : getProductsByCategory(category.value);
 
@@ -123,11 +147,10 @@ const filteredProducts = computed(() => {
     base = base.filter((p) => p.subCategory === subCategory.value);
   }
 
-  const term = searchTerm.value.trim().toLowerCase();
+  const term = normalizeText(searchTerm.value.trim());
   if (!term) return base;
   return base.filter((p) => {
-    const title = (p.title || '').toLowerCase();
-    const desc = (p.description || '').toLowerCase();
+    const { title, desc } = getNormalizedProduct(p);
     return title.includes(term) || desc.includes(term);
   });
 });
