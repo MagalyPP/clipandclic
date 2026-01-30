@@ -229,8 +229,8 @@ export const products: Product[] = [
   },
   {
     id: 18,
-    title: 'Micrófono Mano Libre Tecmaster',
-    description: 'Micrófono mano libre Tecmaster color blanco.',
+    title: 'Micrófono Manos Libres Tecmaster',
+    description: 'Micrófono manos libres Tecmaster color blanco.',
     price: 5990,
     category: 'audio',
     inBanner: false,
