@@ -1637,7 +1637,7 @@ export const products: Product[] = [
     category: 'utiles',
     inBanner: false,
     inStock: true,
-    subCategory: 'salud',
+    subCategory: 'otros',
     images: [getImagePath('mascarilla celeste.jpg')],
   },
 ];
