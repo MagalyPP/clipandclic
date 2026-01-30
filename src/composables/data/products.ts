@@ -1629,6 +1629,17 @@ export const products: Product[] = [
     subCategory: null,
     images: [getImagePath('Soporte Magnético para Automovil.webp')],
   },
+  {
+    id: 154,
+    title: 'Mascarilla Celeste',
+    description: 'Mascarilla protectora color celeste50 unidades.',
+    price: 2500,
+    category: 'utiles',
+    inBanner: false,
+    inStock: true,
+    subCategory: 'salud',
+    images: [getImagePath('mascarilla celeste.jpg')],
+  },
 ];
 
 export const getProductsByCategory = (category: string): Product[] => {
