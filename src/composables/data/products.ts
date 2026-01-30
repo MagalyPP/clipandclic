@@ -583,7 +583,7 @@ export const products: Product[] = [
     id: 49,
     title: 'Croquera Doble Faz Espiral Oficio 50 Hojas',
     description: 'Croquera doble faz en formato oficio con espiral y 50 hojas.',
-    price: 3990,
+    price: 3490,
     category: 'utiles',
     inBanner: false,
     inStock: true,
