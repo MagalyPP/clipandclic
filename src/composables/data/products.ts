@@ -1391,7 +1391,7 @@ export const products: Product[] = [
     category: 'utiles',
     inBanner: false,
     inStock: true,
-    subCategory: 'arte',
+    subCategory: 'lapiz-goma-sacapuntas',
     images: [getImagePath('LAPICES PASTEL GRASOS 12 COLORES ART&CRAFT.jpg')],
   },
   {
