@@ -1750,7 +1750,7 @@ export const products: Product[] = [
     id: 164,
     title: 'Croquera Basic 21x32cm 100 Hojas',
     description: 'Croqueras basic tamaño 21x32cm con 100 hojas 70 gramos marca Glamtex.',
-    price: 3990,
+    price: 3490,
     category: 'utiles',
     inBanner: false,
     inStock: true,
