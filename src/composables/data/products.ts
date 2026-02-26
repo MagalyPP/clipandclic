@@ -900,7 +900,7 @@ export const products: Product[] = [
     inBanner: false,
     inStock: true,
     subCategory: 'pegamento',
-    images: [getImagePath('PEGAMENTO EN BARRA 21 GRAMOS 12 UNIDADESPROARTE.png')],
+    images: [getImagePath('PEGAMENTO EN BARRA 21 GRAMOS 12 UNIDADES PROARTE.png')],
   },
   {
     id: 85,
@@ -1667,7 +1667,7 @@ export const products: Product[] = [
   {
     id: 157,
     title: 'Cola Fría 225 gramos',
-    description: 'Cola fría en presentación de 225 gramos, 6 unidades marca Fulton para manualidades.',
+    description: 'Cola fría en presentación de 225 gramos.',
     price: 1190,
     category: 'utiles',
     inBanner: false,
