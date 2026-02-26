@@ -900,7 +900,7 @@ export const products: Product[] = [
     inBanner: false,
     inStock: true,
     subCategory: 'pegamento',
-    images: [getImagePath('PEGAMENTO EN BARRA 21 GRAMOS 12 UNIDADES PROARTE.png')],
+    images: [getImagePath('PEGAMENTO EN BARRA 21 GRAMOS 12 UNIDADESPROARTE.png')],
   },
   {
     id: 85,
@@ -982,7 +982,7 @@ export const products: Product[] = [
   {
     id: 92,
     title: 'Plumón Pizarra',
-    description: 'Plumones para pizarra en variedades de colores (azul, negro, rojo), 12 unidades por color.',
+    description: 'Plumones para pizarra en variedades de colores (azul, negro, rojo).',
     price: 590,
     category: 'utiles',
     inBanner: false,
@@ -1353,7 +1353,7 @@ export const products: Product[] = [
   {
     id: 127,
     title: 'Cinta de Enmascarar 36mm x 40mt',
-    description: 'Cinta de enmascarar 36mm x 40mts, 8 unidades marca Lavoro de mayor ancho.',
+    description: 'Cinta de enmascarar 36mm x 40mts, marca Lavoro de mayor ancho.',
     price: 1890,
     category: 'utiles',
     inBanner: false,
@@ -1397,7 +1397,7 @@ export const products: Product[] = [
   {
     id: 131,
     title: 'Pincel N°8 Espatulado',
-    description: 'Pincel espatulado tamaño 8 marca Art & Craft, 12 unidades.',
+    description: 'Pincel espatulado tamaño 8 marca Art & Craft.',
     price: 350,
     category: 'utiles',
     inBanner: false,
@@ -1408,7 +1408,7 @@ export const products: Product[] = [
   {
     id: 132,
     title: 'Pincel N°8 Pelo Camello',
-    description: 'Pincel N°8 de pelo camello marca Art & Craft, 12 unidades para pintura.',
+    description: 'Pincel N°8 de pelo camello marca Art & Craft.',
     price: 350,
     category: 'utiles',
     inBanner: false,
@@ -1452,7 +1452,7 @@ export const products: Product[] = [
   {
     id: 136,
     title: 'Sacapuntas Doble',
-    description: 'Sacapuntas doble marca Pax, 12 unidades.',
+    description: 'Sacapuntas doble marca Pax.',
     price: 890,
     category: 'utiles',
     inBanner: false,
@@ -1463,7 +1463,7 @@ export const products: Product[] = [
   {
     id: 137,
     title: 'Bolsa con Mostacillas',
-    description: 'Bolsa con mostacillas (cuentas pequeñas) para manualidades, pack de 20 bolsitas.',
+    description: 'Bolsa con mostacillas (cuentas pequeñas) para manualidades.',
     price: 150,
     category: 'utiles',
     inBanner: false,
@@ -1529,7 +1529,7 @@ export const products: Product[] = [
   {
     id: 145,
     title: 'Forro Libro Plástico Transparente',
-    description: 'Forro para libros plástico transparente marca Espinoza, 10 unidades.',
+    description: 'Forro para libros plástico transparente marca Espinoza.',
     price: 290,
     category: 'utiles',
     inBanner: false,
@@ -1540,7 +1540,7 @@ export const products: Product[] = [
   {
     id: 146,
     title: 'Fundas Transparente Oficio',
-    description: 'Fundas transparentes para documentos tamaño oficio marca Fultons, 100 unidades.',
+    description: 'Fundas transparentes para documentos tamaño oficio marca Fultons.',
     price: 80,
     category: 'utiles',
     inBanner: false,
