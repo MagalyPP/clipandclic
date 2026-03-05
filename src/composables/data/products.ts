@@ -1769,7 +1769,7 @@ export const products: Product[] = [
     category: 'utiles',
     inBanner: false,
     inStock: true,
-    subCategory: 'cartulinas',
+    subCategory: 'carpetas',
     images: [
       getImagePath('CARPETA OFICIO CON ACCO CLIP PLASTICO AMARILLO 1 UNIDAD JRF.jpg'),
       getImagePath('CARPETA OFICIO CON ACCO CLIP PLASTICO AZUL JRF.gif'),
