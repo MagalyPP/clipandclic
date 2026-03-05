@@ -1924,7 +1924,7 @@ export const products: Product[] = [
     id: 180,
     title: 'Papel de Regalo Niña',
     description: 'Papel de regalo niña con diseño de flores tamaño 70x100cm, 1 pliego marca Libesa.',
-    price: 0,
+    price: 300,
     category: 'navidad',
     inBanner: false,
     inStock: true,
