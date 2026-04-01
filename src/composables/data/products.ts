@@ -2209,7 +2209,7 @@ export const products: Product[] = [
     inBanner: false,
     inStock: true,
     subCategory: 'arte',
-    images: [getImagePath('TEMPERA METALICA 6 COLORES PROARTE.jpg')],
+    images: [getImagePath('TEMPERA METALICA 6 COLORES PROARTE.PNG')],
   },
   {
     id: 235,
