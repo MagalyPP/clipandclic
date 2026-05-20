@@ -2160,7 +2160,7 @@ export const products: Product[] = [
     id: 230,
     title: 'Pasta para Modelar DAS 250gr',
     description: 'Pasta para modelar DAS 250 gramos, ideal para proyectos de arte y manualidades.',
-    price: 2390,
+    price: 2190,
     category: 'utiles',
     inBanner: false,
     inStock: true,
