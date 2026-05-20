@@ -729,7 +729,7 @@ export const products: Product[] = [
     id: 69,
     title: 'Lápiz Grafito Jumbo',
     description: 'Lápiz grafito jumbo Arte Top.',
-    price: 00,
+    price: 400,
     category: 'utiles',
     inBanner: false,
     inStock: true,
