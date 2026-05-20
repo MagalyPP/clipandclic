@@ -2348,7 +2348,7 @@ export const products: Product[] = [
     id: 246,
     title: 'Papel Crepe 50x200cm',
     description: 'Papel crepe marca Art & Craft en presentación 50x200cm, disponible en colores amarillo, azul rey, rojo y verde para proyectos escolares.',
-    price: 450 490,
+    price: 490,
     category: 'utiles',
     inBanner: false,
     inStock: true,
