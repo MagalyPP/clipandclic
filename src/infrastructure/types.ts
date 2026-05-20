@@ -30,6 +30,7 @@ export type SubCategory =
   | 'otros'
   | 'cintas-adhesivas'
   | 'forros-fundas'
+  | 'plumavit'
   | null
 
 export type Product = {
