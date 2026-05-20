@@ -89,6 +89,7 @@ const subCategoryTitles: Record<string, string> = {
   'reglas': 'Reglas y Geometría',
   'pegamento': 'Pegamento',
   'cartulinas': 'Cartulinas',
+  'plumavit': appTexts.products.subCategories.plumavit,
   'plumones-destacadores': 'Plumones y Destacadores',
   'carpetas': 'Carpetas',
   'otros': 'Otros',
