@@ -25,6 +25,7 @@ export type SubCategory =
   | 'reglas'
   | 'pegamento'
   | 'cartulinas'
+  | 'plumavit'
   | 'plumones-destacadores'
   | 'carpetas'
   | 'otros'

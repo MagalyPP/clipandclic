@@ -69,19 +69,10 @@ const toggleNav = () => {
               <li>
                 <RouterLink
                   class="dropdown-item"
-                  to="/products/utiles/lapiz-goma-sacapuntas"
+                  to="/products/utiles/arte"
                   @click="isNavCollapsed = true"
                 >
-                  Lápices, Gomas y Sacapuntas
-                </RouterLink>
-              </li>
-              <li>
-                <RouterLink
-                  class="dropdown-item"
-                  to="/products/utiles/cuadernos"
-                  @click="isNavCollapsed = true"
-                >
-                  Cuadernos
+                  Arte
                 </RouterLink>
               </li>
               <li>
@@ -91,15 +82,6 @@ const toggleNav = () => {
                   @click="isNavCollapsed = true"
                 >
                   Carpetas
-                </RouterLink>
-              </li>
-              <li>
-                <RouterLink
-                  class="dropdown-item"
-                  to="/products/utiles/pegamento"
-                  @click="isNavCollapsed = true"
-                >
-                  Pegamento
                 </RouterLink>
               </li>
               <li>
@@ -123,6 +105,15 @@ const toggleNav = () => {
               <li>
                 <RouterLink
                   class="dropdown-item"
+                  to="/products/utiles/cuadernos"
+                  @click="isNavCollapsed = true"
+                >
+                  Cuadernos
+                </RouterLink>
+              </li>
+              <li>
+                <RouterLink
+                  class="dropdown-item"
                   to="/products/utiles/forros-fundas"
                   @click="isNavCollapsed = true"
                 >
@@ -132,10 +123,10 @@ const toggleNav = () => {
               <li>
                 <RouterLink
                   class="dropdown-item"
-                  to="/products/utiles/arte"
+                  to="/products/utiles/lapiz-goma-sacapuntas"
                   @click="isNavCollapsed = true"
                 >
-                  Arte
+                  Lápices, Gomas y Sacapuntas
                 </RouterLink>
               </li>
               <li>
@@ -145,6 +136,33 @@ const toggleNav = () => {
                   @click="isNavCollapsed = true"
                 >
                   Manualidades
+                </RouterLink>
+              </li>
+              <li>
+                <RouterLink
+                  class="dropdown-item"
+                  to="/products/utiles/otros"
+                  @click="isNavCollapsed = true"
+                >
+                  Otros
+                </RouterLink>
+              </li>
+              <li>
+                <RouterLink
+                  class="dropdown-item"
+                  to="/products/utiles/pegamento"
+                  @click="isNavCollapsed = true"
+                >
+                  Pegamento
+                </RouterLink>
+              </li>
+              <li>
+                <RouterLink
+                  class="dropdown-item"
+                  to="/products/utiles/plumavit"
+                  @click="isNavCollapsed = true"
+                >
+                  {{ appTexts.navbar.navigation.plumavit }}
                 </RouterLink>
               </li>
               <li>
@@ -163,15 +181,6 @@ const toggleNav = () => {
                   @click="isNavCollapsed = true"
                 >
                   Reglas y Geometría
-                </RouterLink>
-              </li>
-              <li>
-                <RouterLink
-                  class="dropdown-item"
-                  to="/products/utiles/otros"
-                  @click="isNavCollapsed = true"
-                >
-                  Otros
                 </RouterLink>
               </li>
             </ul>
@@ -195,10 +204,10 @@ const toggleNav = () => {
               <li>
                 <RouterLink
                   class="dropdown-item"
-                  to="/products/mouses-teclados"
+                  to="/products/almacenamiento"
                   @click="isNavCollapsed = true"
                 >
-                  {{ appTexts.navbar.navigation.mousesKeyboards }}
+                  {{ appTexts.navbar.navigation.storage }}
                 </RouterLink>
               </li>
               <li>
@@ -214,10 +223,10 @@ const toggleNav = () => {
               <li>
                 <RouterLink
                   class="dropdown-item"
-                  to="/products/almacenamiento"
+                  to="/products/mouses-teclados"
                   @click="isNavCollapsed = true"
                 >
-                  {{ appTexts.navbar.navigation.storage }}
+                  {{ appTexts.navbar.navigation.mousesKeyboards }}
                 </RouterLink>
               </li>
               <li>

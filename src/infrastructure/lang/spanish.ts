@@ -8,6 +8,7 @@ export const appTexts: any = {
       schoolSupplies: 'Útiles escolares',
       christmasSpecial: 'Especial Navidad',
       technology: 'Tecnología',
+      plumavit: 'Plumavit',
       mousesKeyboards: 'Mouses / Teclados',
       audio: 'Audio',
       cables: 'Cables',
@@ -71,6 +72,9 @@ export const appTexts: any = {
     searchAriaLabel: 'Buscar productos',
     noResults: 'No hay productos disponibles en esta categoría.',
     outOfStock: 'Sin Stock',
+    subCategories: {
+      plumavit: 'Plumavit',
+    },
     resultsCount: (count: number) => `${count} ${count === 1 ? 'producto encontrado' : 'productos encontrados'}`,
   },
 };
