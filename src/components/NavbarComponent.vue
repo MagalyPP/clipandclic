@@ -380,6 +380,10 @@ hr {
 }
 
 @media (max-width: 991.98px) {
+  .navbar {
+    max-height: 100vh;
+  }
+
   .navbar-collapse {
     background-color: #732626;
     backdrop-filter: blur(8px);
@@ -387,6 +391,9 @@ hr {
     border-radius: 8px;
     margin-top: 0.5rem;
     border: 1px solid rgba(151, 40, 5, 0.2);
+    max-height: calc(100vh - 5rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
   }
 
   .nav-link {
@@ -395,6 +402,16 @@ hr {
 
   .nav-link.router-link-active::after {
     display: none;
+  }
+
+  .dropdown-menu {
+    position: static !important;
+    width: 100%;
+    max-height: min(55vh, 26rem);
+    margin-top: 0.25rem;
+    overflow-y: auto;
+    border-radius: 6px;
+    box-shadow: none;
   }
 }
 </style>
