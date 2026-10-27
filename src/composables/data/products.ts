@@ -1951,7 +1951,7 @@ export const products: Product[] = [
   {
     id: 212,
     title: 'Cartulina Color Pliego',
-    description: 'Cartulina de colores variados 53x77 cm, disponible en amarillo, azul, blanco, rojo, rosado y verde claro para proyectos escolares.',
+    description: 'Cartulina de colores variados 53x77 cm, disponible en amarillo, azul, blanco, rojo, rosado, verde claro, naranja, celeste y piel para proyectos escolares.',
     price: 350,
     category: 'utiles',
     inBanner: false,
@@ -1961,6 +1961,9 @@ export const products: Product[] = [
       getImagePath('CARTULINA COLOR AMARILLO 53X77 CMS PAREDONES.png'),
       getImagePath('CARTULINA COLOR AZUL 53X77 CMS PAREDONES.png'),
       getImagePath('CARTULINA COLOR BLANCO140 GRS 1 PLIEGO DIPISA.png'),
+      getImagePath('CARTULINA COLOR CELESTE 53X77 CMS PAREDONES.png'),
+      getImagePath('CARTULINA COLOR NARANJO 53X77 CMS PAREDONES.png'),
+      getImagePath('CARTULINA COLOR PIEL 53X77 CMS PAREDONES.png'),
       getImagePath('CARTULINA COLOR ROJO 53X77 CMS PAREDONES.png'),
       getImagePath('CARTULINA COLOR ROSADO 53X77 CMS PAREDONES.png'),
       getImagePath('CARTULINA COLOR VERDE CLARO 53X77 CMS PAREDONES.png'),
