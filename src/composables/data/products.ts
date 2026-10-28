@@ -1033,7 +1033,7 @@ export const products: Product[] = [
     id: 97,
     title: 'Resma Carta 75grs',
     description: 'Resma de papel tamaño carta 75 gramos para impresiones y copias.',
-    price: 4490,
+    price: 4690,
     category: 'utiles',
     inBanner: false,
     inStock: true,
@@ -2622,6 +2622,17 @@ export const products: Product[] = [
     inStock: true,
     subCategory: 'otros',
     images: [getImagePath('CAJA GOMA DE BORRAR MIGA 20 UNIDADES FULTONS.jpg')],
+  },
+  {
+    id: 269,
+    title: 'Arpillera',
+    description: 'Arpillera para manualidades y proyectos escolares.',
+    price: 1190,
+    category: 'utiles',
+    inBanner: false,
+    inStock: true,
+    subCategory: 'manualidades',
+    images: [getImagePath('arpillera.png')],
   },
 ];
 
